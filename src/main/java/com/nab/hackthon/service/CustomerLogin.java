@@ -1,4 +1,9 @@
 package com.nab.hackthon.service;
 
-public class CustomerLogin {
+import com.nab.hackthon.entity.Customer;
+
+
+public interface CustomerLogin {
+
+    public Customer login(String customerId) throws Throwable;
 }
