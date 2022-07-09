@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Customer {
 
     @Id
-    private String customerId;
+    private String customer_Id;
 
-    private String customerName;
+    private String customer_Name;
 }

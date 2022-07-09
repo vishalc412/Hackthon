@@ -17,7 +17,7 @@ public class CustomerLoginImpl implements CustomerLogin {
     @Override
     public Customer login(String customerId) throws Throwable {
        return (Customer) customerRepository.findById(customerId).orElseThrow(
-               () ->  new ResourceNotFoundException("No User Id exist",customerId,"Demo"));
+               () ->  new ResourceNotFoundException("No User Id exist","customerId",customerId));
 
 
     }
